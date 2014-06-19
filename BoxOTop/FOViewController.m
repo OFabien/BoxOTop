@@ -26,7 +26,7 @@
     // Dispose of any resources that can be recreated.
 }
 
-#pragma TableVIew Methods
+#pragma mark - TableVIew Methods
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 	return [self.aHistory count];
@@ -47,7 +47,7 @@
 	return cell;
 }
 
-#pragma SearchBar Methods
+#pragma mark - SearchBarMethods
 
 - (void)searchBarTextDidBeginEditing:(UISearchBar *)searchBar {
 	NSLog(@"hey");

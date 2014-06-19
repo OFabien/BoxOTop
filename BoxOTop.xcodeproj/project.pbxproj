@@ -483,6 +483,7 @@
 				5F1CF9DC1951F13F00A56F4C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5F1CF9DD1951F13F00A56F4C /* Build configuration list for PBXNativeTarget "BoxOTopTests" */ = {
 			isa = XCConfigurationList;
@@ -491,6 +492,7 @@
 				5F1CF9DF1951F13F00A56F4C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
