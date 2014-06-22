@@ -16,7 +16,7 @@
 @property (strong, nonatomic) NSString *strSynopsis;
 @property (strong, nonatomic) NSString *strActors;
 @property (strong, nonatomic) NSString *urlImage;
-@property (strong, nonatomic) NSString *strRating;
+@property (nonatomic) NSInteger *intRating;
 @property (strong, nonatomic) IBOutlet UINavigationItem *navBar;
 @property (strong, nonatomic) NSString *strTitle;
 @property (strong, nonatomic) IBOutlet UIImageView *picture;
@@ -26,5 +26,6 @@
 @property (strong, nonatomic) NSMutableArray *picRated;
 @property (strong, nonatomic) NSString *strRated;
 @property (strong, nonatomic) IBOutlet UIImageView *uipicRated;
+@property (strong, nonatomic) IBOutlet UIImageView *picRating;
 
 @end
