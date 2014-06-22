@@ -7,11 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "FOMovie.h"
 
 @interface FOViewControllerDetails : UIViewController
 
-@property (strong, nonatomic) FOMovie *movieDetails;
 @property (strong, nonatomic) NSString *strYear;
 @property (strong, nonatomic) NSString *strSynopsis;
 @property (strong, nonatomic) NSString *strActors;

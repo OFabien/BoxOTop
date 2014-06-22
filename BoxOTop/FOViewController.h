@@ -18,6 +18,6 @@
 @property (strong, nonatomic) IBOutlet UINavigationItem *navBar;
 @property (strong, nonatomic) IBOutlet UIActivityIndicatorView *indicator;
 
-- (void) getMovie:(NSString*) movie;
+- (void) getMovie:(NSString*)movie :(BOOL)history;
 
 @end

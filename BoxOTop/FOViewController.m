@@ -55,14 +55,12 @@
 
 -(void)searchBarSearchButtonClicked:(UISearchBar *)searchBar {
 	//[searchBar resignFirstResponder];
-	[self getMovie:searchBar.text];
-	[[self aHistory] addObject:searchBar.text];
-	[[self tv_history] reloadData];
+	[self getMovie:searchBar.text :YES];
 }
 
 #pragma mark - Segue
 
-- (void) getMovie:(NSString*) movie {
+- (void) getMovie:(NSString*)movie :(BOOL)history{
 	[_indicator startAnimating];
 	dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0ul);
 	
@@ -70,17 +68,20 @@
 		[self setMovieArray:[FOMovieDAO searchMovie:movie]];
 		dispatch_async(dispatch_get_main_queue(), ^{
 			[self performSegueWithIdentifier:@"searchSegue" sender:0];
+			if (history == YES) {
+				[[self aHistory] addObject:movie];
+				[[self tv_history] reloadData];
+			}
 		});
 	});
 	[_indicator stopAnimating];
 }
 
 - (void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-	[self getMovie:[self.aHistory objectAtIndex:indexPath.row]];
+	[self getMovie:[self.aHistory objectAtIndex:indexPath.row] :NO];
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-	
 	FOTableViewController *tvc = [segue destinationViewController];
 	[tvc setMovieArray:[self movieArray]];
 

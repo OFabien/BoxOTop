@@ -8,7 +8,6 @@
 
 #import <Foundation/Foundation.h>
 #import "FOUtils.h"
-#import "FOMovie.h"
 
 @interface FOMovieDAO : NSObject
 
