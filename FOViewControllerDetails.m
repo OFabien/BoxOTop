@@ -36,10 +36,29 @@
 	self.picture.image =img;
 	self.navBar.title = self.strTitle;
 	self.uipicRated.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@.jpg", self.strRated]];
-	self.picRating.image = [UIImage imageNamed:@"00.jpeg"];
-	/*if (_intRating comp) {
-		<#statements#>
-	}*/
+	if (_intRating < 1) {
+		self.picRating.image = [UIImage imageNamed:@"00.jpeg"];
+	} else if (_intRating >= 1 && _intRating < 2) {
+		self.picRating.image = [UIImage imageNamed:@"05.jpeg"];
+	} else if (_intRating >= 2 && _intRating < 3) {
+		self.picRating.image = [UIImage imageNamed:@"10.jpeg"];
+	} else if (_intRating >= 3 && _intRating < 4) {
+		self.picRating.image = [UIImage imageNamed:@"15.jpeg"];
+	} else if (_intRating >= 4 && _intRating < 5) {
+		self.picRating.image = [UIImage imageNamed:@"20.jpeg"];
+	} else if (_intRating >= 5 && _intRating < 6) {
+		self.picRating.image = [UIImage imageNamed:@"25.jpeg"];
+	} else if (_intRating >= 6 && _intRating < 7) {
+		self.picRating.image = [UIImage imageNamed:@"30.jpeg"];
+	} else if (_intRating >= 7 && _intRating < 8) {
+		self.picRating.image = [UIImage imageNamed:@"35.jpeg"];
+	} else if (_intRating >= 8 && _intRating < 9) {
+		self.picRating.image = [UIImage imageNamed:@"40.jpeg"];
+	} else if (_intRating >= 9 && _intRating < 10)  {
+		self.picRating.image = [UIImage imageNamed:@"45.jpeg"];
+	} else {
+		self.picRating.image = [UIImage imageNamed:@"50.jpeg"];
+	}
 }
 
 - (void)didReceiveMemoryWarning

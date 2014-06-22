@@ -71,7 +71,7 @@
 	vcd.strSynopsis = [dicoMovie objectForKey:@"Plot"];
 	vcd.strActors = [dicoMovie objectForKey:@"Actors"];
 	vcd.urlImage = [dicoMovie objectForKey:@"Poster"];
-	//vcd.strRating = [dicoMovie objectForKey:@"imdbRating"];
+	vcd.intRating = [[dicoMovie objectForKey:@"imdbRating"] integerValue];
 	vcd.strTitle = [dico objectForKey:@"Title"];
 	vcd.strRated = [dicoMovie objectForKey:@"Rated"];
 }
