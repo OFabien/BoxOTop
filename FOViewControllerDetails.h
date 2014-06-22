@@ -23,9 +23,8 @@
 @property (strong, nonatomic) IBOutlet UILabel *year;
 @property (strong, nonatomic) IBOutlet UITextView *synopsis;
 @property (strong, nonatomic) IBOutlet UITextView *actors;
-@property (strong, nonatomic) NSMutableArray *picRated;
 @property (strong, nonatomic) NSString *strRated;
-@property (strong, nonatomic) IBOutlet UIImageView *uipicRated;
 @property (strong, nonatomic) IBOutlet UIImageView *picRating;
+@property (strong, nonatomic) IBOutlet UIImageView *picRated;
 
 @end

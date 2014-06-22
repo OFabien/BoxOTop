@@ -35,7 +35,7 @@
 	UIImage *img = [[UIImage alloc] initWithData:data];
 	self.picture.image =img;
 	self.navBar.title = self.strTitle;
-	self.uipicRated.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@.jpg", self.strRated]];
+	self.picRated.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@.png", self.strRated]];
 	if (_intRating < 1) {
 		self.picRating.image = [UIImage imageNamed:@"00.jpeg"];
 	} else if (_intRating >= 1 && _intRating < 2) {
