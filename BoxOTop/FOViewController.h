@@ -15,6 +15,7 @@
 @property (strong, nonatomic) IBOutlet UITableView *tv_history;
 @property (copy, nonatomic) NSArray *aHistory;
 @property (strong, nonatomic) NSMutableArray *movieArray;
+@property (strong, nonatomic) IBOutlet UINavigationItem *navBar;
 
 
 @end
