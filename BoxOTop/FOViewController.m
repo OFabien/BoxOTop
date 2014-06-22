@@ -49,13 +49,11 @@
 
 #pragma mark - SearchBarMethods
 
-- (void)searchBarTextDidBeginEditing:(UISearchBar *)searchBar {
-	NSLog(@"hey");
-}
-
 -(void)searchBarSearchButtonClicked:(UISearchBar *)searchBar {
 	[searchBar resignFirstResponder];
 	NSLog(@"salut");
+	[FOMovieDAO searchMovie:[searchBar text]];
+	
 }
 
 @end

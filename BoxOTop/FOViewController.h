@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FOMovieDAO.h"
 
 @interface FOViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate>
 @property (strong, nonatomic) IBOutlet UISearchBar *sb_title;

@@ -14,10 +14,10 @@
 	
 	NSDictionary *dico = [FOUtils callWebService:[[NSString alloc] initWithFormat:@"s=%@", movie]];
 	
-	FOMovie *findMovie;
-	[findMovie setTitle:[dico objectForKey:@"title"]];
+	NSMutableArray *movieArray = [[NSMutableArray alloc] init];
+	movieArray = [dico mutableArrayValueForKey:@"Search"];
 	
-	return nil;
+	return movieArray;
 }
 
 

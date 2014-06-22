@@ -49,7 +49,7 @@
         <!--Table View Controller-->
         <scene sceneID="2VX-sU-6Za">
             <objects>
-                <tableViewController id="Lgb-di-uZK" sceneMemberID="viewController">
+                <tableViewController id="Lgb-di-uZK" customClass="FOTableViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="I8l-Bl-C5q">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
