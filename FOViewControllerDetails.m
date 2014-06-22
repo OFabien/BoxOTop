@@ -35,29 +35,29 @@
 	UIImage *img = [[UIImage alloc] initWithData:data];
 	self.picture.image =img;
 	self.navBar.title = self.strTitle;
-	self.picRated.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@.png", self.strRated]];
+	self.picRated.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@", self.strRated]];
 	if (_intRating < 1) {
-		self.picRating.image = [UIImage imageNamed:@"00.jpeg"];
+		self.picRating.image = [UIImage imageNamed:@"00"];
 	} else if (_intRating >= 1 && _intRating < 2) {
-		self.picRating.image = [UIImage imageNamed:@"05.jpeg"];
+		self.picRating.image = [UIImage imageNamed:@"05"];
 	} else if (_intRating >= 2 && _intRating < 3) {
-		self.picRating.image = [UIImage imageNamed:@"10.jpeg"];
+		self.picRating.image = [UIImage imageNamed:@"10"];
 	} else if (_intRating >= 3 && _intRating < 4) {
-		self.picRating.image = [UIImage imageNamed:@"15.jpeg"];
+		self.picRating.image = [UIImage imageNamed:@"15"];
 	} else if (_intRating >= 4 && _intRating < 5) {
-		self.picRating.image = [UIImage imageNamed:@"20.jpeg"];
+		self.picRating.image = [UIImage imageNamed:@"20"];
 	} else if (_intRating >= 5 && _intRating < 6) {
-		self.picRating.image = [UIImage imageNamed:@"25.jpeg"];
+		self.picRating.image = [UIImage imageNamed:@"25"];
 	} else if (_intRating >= 6 && _intRating < 7) {
-		self.picRating.image = [UIImage imageNamed:@"30.jpeg"];
+		self.picRating.image = [UIImage imageNamed:@"30"];
 	} else if (_intRating >= 7 && _intRating < 8) {
-		self.picRating.image = [UIImage imageNamed:@"35.jpeg"];
+		self.picRating.image = [UIImage imageNamed:@"35"];
 	} else if (_intRating >= 8 && _intRating < 9) {
-		self.picRating.image = [UIImage imageNamed:@"40.jpeg"];
+		self.picRating.image = [UIImage imageNamed:@"40"];
 	} else if (_intRating >= 9 && _intRating < 10)  {
-		self.picRating.image = [UIImage imageNamed:@"45.jpeg"];
+		self.picRating.image = [UIImage imageNamed:@"45"];
 	} else {
-		self.picRating.image = [UIImage imageNamed:@"50.jpeg"];
+		self.picRating.image = [UIImage imageNamed:@"50"];
 	}
 }
 
