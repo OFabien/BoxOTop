@@ -53,7 +53,6 @@
 	[searchBar resignFirstResponder];
 	NSLog(@"salut");
 	[FOMovieDAO searchMovie:[searchBar text]];
-	
 }
 
 #pragma mark - Segue
