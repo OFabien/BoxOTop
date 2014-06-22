@@ -37,7 +37,9 @@
 	self.navBar.title = self.strTitle;
 	self.uipicRated.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@.jpg", self.strRated]];
 	self.picRating.image = [UIImage imageNamed:@"00.jpeg"];
-	
+	/*if (_intRating comp) {
+		<#statements#>
+	}*/
 }
 
 - (void)didReceiveMemoryWarning
