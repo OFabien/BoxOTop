@@ -35,6 +35,7 @@
 	UIImage *img = [[UIImage alloc] initWithData:data];
 	self.picture.image =img;
 	self.navBar.title = self.strTitle;
+	self.uipicRated.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@.jpg", self.strRated]];
 }
 
 - (void)didReceiveMemoryWarning

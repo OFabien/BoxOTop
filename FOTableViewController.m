@@ -73,6 +73,7 @@
 	vcd.urlImage = [dicoMovie objectForKey:@"Poster"];
 	vcd.strRating = [dicoMovie objectForKey:@"imdbRating"];
 	vcd.strTitle = [dico objectForKey:@"Title"];
+	vcd.strRated = [dicoMovie objectForKey:@"Rated"];
 }
 
 @end

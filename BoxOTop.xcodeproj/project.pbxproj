@@ -26,6 +26,8 @@
 		5F1CF9E919522F2100A56F4C /* FOMovieDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F1CF9E819522F2100A56F4C /* FOMovieDAO.m */; };
 		5F9447B519571A0A0053F1DD /* FOTableViewCellMovie.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F9447B419571A0A0053F1DD /* FOTableViewCellMovie.m */; };
 		5F9447B819571D3A0053F1DD /* FOViewControllerDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F9447B719571D3A0053F1DD /* FOViewControllerDetails.m */; };
+		5F9447BB19575CE00053F1DD /* star.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5F9447BA19575CE00053F1DD /* star.jpg */; };
+		5F9447BD19575D5A0053F1DD /* estar.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F9447BC19575D5A0053F1DD /* estar.png */; };
 		5FC114251956F9970019943C /* FOTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FC114241956F9970019943C /* FOTableViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -69,6 +71,8 @@
 		5F9447B419571A0A0053F1DD /* FOTableViewCellMovie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FOTableViewCellMovie.m; path = ../FOTableViewCellMovie.m; sourceTree = "<group>"; };
 		5F9447B619571D3A0053F1DD /* FOViewControllerDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FOViewControllerDetails.h; path = ../FOViewControllerDetails.h; sourceTree = "<group>"; };
 		5F9447B719571D3A0053F1DD /* FOViewControllerDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FOViewControllerDetails.m; path = ../FOViewControllerDetails.m; sourceTree = "<group>"; };
+		5F9447BA19575CE00053F1DD /* star.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = star.jpg; sourceTree = "<group>"; };
+		5F9447BC19575D5A0053F1DD /* estar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = estar.png; sourceTree = "<group>"; };
 		5FC114231956F9970019943C /* FOTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FOTableViewController.h; path = ../FOTableViewController.h; sourceTree = "<group>"; };
 		5FC114241956F9970019943C /* FOTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FOTableViewController.m; path = ../FOTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -130,6 +134,7 @@
 		5F1CF9B11951F13F00A56F4C /* BoxOTop */ = {
 			isa = PBXGroup;
 			children = (
+				5F9447B919575CD40053F1DD /* Image */,
 				5F1CF9E019522B3100A56F4C /* Model */,
 				5F1CF9BA1951F13F00A56F4C /* FOAppDelegate.h */,
 				5F1CF9BB1951F13F00A56F4C /* FOAppDelegate.m */,
@@ -188,6 +193,15 @@
 				5F1CF9E819522F2100A56F4C /* FOMovieDAO.m */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		5F9447B919575CD40053F1DD /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				5F9447BC19575D5A0053F1DD /* estar.png */,
+				5F9447BA19575CE00053F1DD /* star.jpg */,
+			);
+			name = Image;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,6 +282,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				5F1CF9C41951F13F00A56F4C /* Images.xcassets in Resources */,
+				5F9447BD19575D5A0053F1DD /* estar.png in Resources */,
+				5F9447BB19575CE00053F1DD /* star.jpg in Resources */,
 				5F1CF9B61951F13F00A56F4C /* InfoPlist.strings in Resources */,
 				5F1CF9BF1951F13F00A56F4C /* Main.storyboard in Resources */,
 			);
