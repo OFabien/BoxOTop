@@ -51,14 +51,15 @@
 
 -(void)searchBarSearchButtonClicked:(UISearchBar *)searchBar {
 	[searchBar resignFirstResponder];
-	NSLog(@"salut");
-	[FOMovieDAO searchMovie:[searchBar text]];
+	[self setMovieArray:[FOMovieDAO searchMovie:[searchBar text]]];
+	[self performSegueWithIdentifier:@"searchSegue" sender:0];
 }
 
 #pragma mark - Segue
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-	
+	FOTableViewController *tvc = [segue destinationViewController];
+	[tvc setMovieArray:[self movieArray]];
 }
 
 @end

@@ -10,4 +10,6 @@
 
 @interface FOTableViewController : UITableViewController<UITableViewDataSource, UITableViewDelegate>
 
+@property (strong, nonatomic) NSMutableArray *movieArray;
+
 @end
