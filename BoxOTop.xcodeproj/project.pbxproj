@@ -24,6 +24,8 @@
 		5F1CF9E319522B5700A56F4C /* FOUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F1CF9E219522B5700A56F4C /* FOUtils.m */; };
 		5F1CF9E619522B7E00A56F4C /* FOMovie.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F1CF9E519522B7E00A56F4C /* FOMovie.m */; };
 		5F1CF9E919522F2100A56F4C /* FOMovieDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F1CF9E819522F2100A56F4C /* FOMovieDAO.m */; };
+		5F9447B519571A0A0053F1DD /* FOTableViewCellMovie.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F9447B419571A0A0053F1DD /* FOTableViewCellMovie.m */; };
+		5F9447B819571D3A0053F1DD /* FOViewControllerDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F9447B719571D3A0053F1DD /* FOViewControllerDetails.m */; };
 		5FC114251956F9970019943C /* FOTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FC114241956F9970019943C /* FOTableViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +65,10 @@
 		5F1CF9E519522B7E00A56F4C /* FOMovie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FOMovie.m; sourceTree = "<group>"; };
 		5F1CF9E719522F2100A56F4C /* FOMovieDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FOMovieDAO.h; sourceTree = "<group>"; };
 		5F1CF9E819522F2100A56F4C /* FOMovieDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FOMovieDAO.m; sourceTree = "<group>"; };
+		5F9447B319571A0A0053F1DD /* FOTableViewCellMovie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FOTableViewCellMovie.h; path = ../FOTableViewCellMovie.h; sourceTree = "<group>"; };
+		5F9447B419571A0A0053F1DD /* FOTableViewCellMovie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FOTableViewCellMovie.m; path = ../FOTableViewCellMovie.m; sourceTree = "<group>"; };
+		5F9447B619571D3A0053F1DD /* FOViewControllerDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FOViewControllerDetails.h; path = ../FOViewControllerDetails.h; sourceTree = "<group>"; };
+		5F9447B719571D3A0053F1DD /* FOViewControllerDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FOViewControllerDetails.m; path = ../FOViewControllerDetails.m; sourceTree = "<group>"; };
 		5FC114231956F9970019943C /* FOTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FOTableViewController.h; path = ../FOTableViewController.h; sourceTree = "<group>"; };
 		5FC114241956F9970019943C /* FOTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FOTableViewController.m; path = ../FOTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -132,6 +138,10 @@
 				5F1CF9C11951F13F00A56F4C /* FOViewController.m */,
 				5FC114231956F9970019943C /* FOTableViewController.h */,
 				5FC114241956F9970019943C /* FOTableViewController.m */,
+				5F9447B319571A0A0053F1DD /* FOTableViewCellMovie.h */,
+				5F9447B419571A0A0053F1DD /* FOTableViewCellMovie.m */,
+				5F9447B619571D3A0053F1DD /* FOViewControllerDetails.h */,
+				5F9447B719571D3A0053F1DD /* FOViewControllerDetails.m */,
 				5F1CF9C31951F13F00A56F4C /* Images.xcassets */,
 				5F1CF9B21951F13F00A56F4C /* Supporting Files */,
 			);
@@ -279,6 +289,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				5F1CF9E919522F2100A56F4C /* FOMovieDAO.m in Sources */,
+				5F9447B519571A0A0053F1DD /* FOTableViewCellMovie.m in Sources */,
+				5F9447B819571D3A0053F1DD /* FOViewControllerDetails.m in Sources */,
 				5F1CF9B81951F13F00A56F4C /* main.m in Sources */,
 				5F1CF9E619522B7E00A56F4C /* FOMovie.m in Sources */,
 				5F1CF9BC1951F13F00A56F4C /* FOAppDelegate.m in Sources */,

@@ -13,9 +13,11 @@
 @interface FOViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate>
 @property (strong, nonatomic) IBOutlet UISearchBar *sb_title;
 @property (strong, nonatomic) IBOutlet UITableView *tv_history;
-@property (copy, nonatomic) NSArray *aHistory;
+@property (strong, nonatomic) NSMutableArray *aHistory;
 @property (strong, nonatomic) NSMutableArray *movieArray;
 @property (strong, nonatomic) IBOutlet UINavigationItem *navBar;
+@property (strong, nonatomic) IBOutlet UIActivityIndicatorView *indicator;
 
+- (void) getMovie:(NSString*) movie;
 
 @end

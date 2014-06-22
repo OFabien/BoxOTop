@@ -7,6 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FOTableViewCellMovie.h"
+#import "FOViewControllerDetails.h"
+#import "FOMovieDAO.h"
 
 @interface FOTableViewController : UITableViewController<UITableViewDataSource, UITableViewDelegate>
 

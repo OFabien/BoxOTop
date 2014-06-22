@@ -13,5 +13,6 @@
 @interface FOMovieDAO : NSObject
 
 + (NSMutableArray*) searchMovie:(NSString*) movie;
++ (NSDictionary*) detailsMovie:(NSString*) movie;
 
 @end

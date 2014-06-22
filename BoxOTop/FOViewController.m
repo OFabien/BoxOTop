@@ -17,7 +17,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	[[self navBar] setHidesBackButton:YES animated:NO];
+	[self.view addSubview:_indicator];
+	
+	self.aHistory = [[NSMutableArray alloc] init];
+	
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -51,16 +54,36 @@
 #pragma mark - SearchBarMethods
 
 -(void)searchBarSearchButtonClicked:(UISearchBar *)searchBar {
-	[searchBar resignFirstResponder];
-	[self setMovieArray:[FOMovieDAO searchMovie:[searchBar text]]];
-	[self performSegueWithIdentifier:@"searchSegue" sender:0];
+	//[searchBar resignFirstResponder];
+	[self getMovie:searchBar.text];
+	[[self aHistory] addObject:searchBar.text];
+	[[self tv_history] reloadData];
 }
 
 #pragma mark - Segue
 
+- (void) getMovie:(NSString*) movie {
+	[_indicator startAnimating];
+	dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0ul);
+	
+	dispatch_async(queue, ^{
+		[self setMovieArray:[FOMovieDAO searchMovie:movie]];
+		dispatch_async(dispatch_get_main_queue(), ^{
+			[self performSegueWithIdentifier:@"searchSegue" sender:0];
+		});
+	});
+	[_indicator stopAnimating];
+}
+
+- (void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+	[self getMovie:[self.aHistory objectAtIndex:indexPath.row]];
+}
+
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+	
 	FOTableViewController *tvc = [segue destinationViewController];
 	[tvc setMovieArray:[self movieArray]];
+
 }
 
 @end

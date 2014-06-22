@@ -11,7 +11,7 @@
 @implementation FOMovieDAO
 
 +(NSMutableArray*) searchMovie:(NSString*) movie {
-	
+	movie = [movie stringByReplacingOccurrencesOfString:@" " withString:@"+"];
 	NSDictionary *dico = [FOUtils callWebService:[[NSString alloc] initWithFormat:@"s=%@", movie]];
 	
 	NSMutableArray *movieArray = [[NSMutableArray alloc] init];
@@ -20,5 +20,12 @@
 	return movieArray;
 }
 
++(NSDictionary*) detailsMovie:(NSString*) movie {
+	movie = [movie stringByReplacingOccurrencesOfString:@" " withString:@"+"];
+	NSDictionary *dico = [FOUtils callWebService:[[NSString alloc] initWithFormat:@"t=%@", movie]];
+	return dico;
+}
+
 
 @end
+
